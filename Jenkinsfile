@@ -11,11 +11,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                npm run test
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                npm run Build
             }
         }
     }
