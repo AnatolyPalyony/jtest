@@ -1,6 +1,6 @@
 pipeline {
-    node('master')
     agent {
+        label 'master'
         docker { image 'node:10.15.2' }
     }
     stages {
