@@ -1,5 +1,6 @@
 pipeline {
     agent {
+        agent {label 'jnode1'}
         docker { image 'node:10.15.2' }
     }
     stages {
