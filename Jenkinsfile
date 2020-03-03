@@ -1,4 +1,5 @@
 pipeline {
+    node('master')
     agent {
         docker { image 'node:10.15.2' }
     }
