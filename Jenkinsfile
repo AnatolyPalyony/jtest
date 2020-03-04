@@ -1,9 +1,5 @@
 pipeline {
-    agent { docker {
-        image 'node:10.15.2'
-        label 'jnode2'
-         } 
-         }
+    agent { label 'jnode2' }
     stages {
         stage('Build') { 
             steps {
